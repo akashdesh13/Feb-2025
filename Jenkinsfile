@@ -10,9 +10,7 @@ pipeline {
         }
 
         stage('BUILD') {
-            agent {
-                label 'Slave_1'
-            } 
+            agent any 
             steps {
                 echo "This is a build stage"
                 sleep 10
