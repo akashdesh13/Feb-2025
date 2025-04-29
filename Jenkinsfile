@@ -6,7 +6,7 @@ pipeline {
             stage('STAGE1'){
                 steps{
                     echo 'This is the checkout stage'
-                    sh 'sleep 10'
+                    sh 'sleep 5'
                     //sh 'exit 1'
                 }
             }
