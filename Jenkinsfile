@@ -2,9 +2,7 @@ pipeline {
     agent none
     stages {
         stage('CHECKOUT') {
-            agent {
-                label 'Slave_2'
-            }
+            agent any
 
             steps {
                 echo "This is a checkout stage"
